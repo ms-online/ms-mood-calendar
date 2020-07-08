@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>2020年心情日历</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>2020年心情日历</h2>
+      <h4>~ 点击下方图标，记录你的每日心情 ~</h4>
+      <p>选择心情图标：</p>
+      <!-- 心情图标 -->
+      <div class="moods_container">
+        <button class="mood mood_1" id="mood_1">
+          <i class="far fa-laugh"></i>
+        </button>
+        <button class="mood mood_2" id="mood_2">
+          <i class="far fa-smile"></i>
+        </button>
+        <button class="mood mood_3" id="mood_3">
+          <i class="far fa-meh"></i>
+        </button>
+        <button class="mood mood_4" id="mood_4">
+          <i class="far fa-frown"></i>
+        </button>
+        <button class="mood mood_5" id="mood_5">
+          <i class="far fa-sad-tear"></i>
+        </button>
+      </div>
+      <p>然后点击下方日历</p>
+      <!-- 随机和清除按钮 -->
+      <button class="action_btn randomize" id="randomize">
+        <i class="fas fa-random"></i>
+      </button>
+      <button class="action_btn clear" id="clear">
+        <i class="fas fa-sync"></i>
+      </button>
+
+      <!-- 日历 -->
+      <div class="calendar" id="calendar"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
